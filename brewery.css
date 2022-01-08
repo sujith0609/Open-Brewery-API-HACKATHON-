@@ -1,0 +1,29 @@
+  .navbar {
+      background: #e97406;
+  }
+  
+  .body-contect {
+      background-color: rgb(238, 160, 65);
+      /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Rey4_9r9pPL2SKItmhx4dK5HkDUl0lyzJg&usqp=CAU"); */
+      width: 100%;
+      height: 500vh;
+  }
+  
+  .navbar-brand.custom-navbar {
+      display: flex;
+      align-items: center;
+      color: black;
+  }
+  
+  .body-contect h3 {
+      text-align: center;
+      padding: 10px 0;
+  }
+  
+  .card-contect {
+      background-color: black;
+  }
+  
+  .card-header {
+      background-color: black!important;
+  }

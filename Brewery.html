@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./brewery.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body class="body-contect">
+
+
+
+    <div>
+
+        <nav class="navbar ">
+            <div class="container-fluid">
+                <a class="navbar-brand custom-navbar" href="#">
+                    <img class="img-responsive" src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iZmlsbC1jdXJyZW50IHRleHQtYmxhY2siIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTIwIDhoLTEydi0yYzAtMi4yMDYgMS43OTQtNCA0LTQgMS4yNjkgMCAyLjQzNS41ODMgMy4xOTggMS41OTguMzMzLjQ0MS45NTkuNTMxIDEuNC4xOTguNDQxLS4zMzIuNTMtLjk1OS4xOTgtMS40LTEuMTQ1LTEuNTIzLTIuODkzLTIuMzk2LTQuNzk2LTIuMzk2LTMuMzA5IDAtNiAyLjY5MS02IDZ2MmgtMmMtMS4xMDQgMC0yIC44OTYtMiAydjEyYzAgMS4xMDQuODk2IDIgMiAyaDE2YzEuMTA0IDAgMi0uODk2IDItMnYtMTJjMC0xLjEwNC0uODk2LTItMi0yem0tOCAxMWMtMS42NTcgMC0zLTEuMzQzLTMtM3MxLjM0My0zIDMtMyAzIDEuMzQzIDMgMy0xLjM0MyAzLTMgM3oiIC8+PC9zdmc+Cg=="
+                        width="40" height="30" alt="Open (lock)">
+                    <img class="img-responsive" src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0zIDAgMS42OTQgMjAuMzMyYy4xNzMgMi4wNzMgMS45MDYgMy42NjggMy45ODYgMy42NjhoNi42MzljMi4wOCAwIDMuODEzLTEuNTk1IDMuOTg2LTMuNjY4bDEuNjk1LTIwLjMzMnptMTUuNDkzIDZoLTguNDkzdjNjMCAuNTUyLS40NDggMS0xIDFzLTEtLjQ0OC0xLTF2LTNoLTIuNDkzbC0uMzMzLTRoMTMuNjUzeiIvPjwvc3ZnPg=="
+                        width="40" height="30" alt="Brewery">
+                    <img class="img-responsive" src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iZmlsbC1jdXJyZW50IHRleHQtYmxhY2siIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEyIDZjNS41MjMgMCAxMC0xLjM0MyAxMC0zcy00LjQ3Ny0zLTEwLTMtMTAgMS4zNDMtMTAgM2MwIDEuNjU3IDQuNDc4IDMgMTAgM3ptMCAxNGMtMi44NiAwLTUuNTc1LS4zNDItNy42NDYtLjk2My0uOTg2LS4yOTYtMS43NTItLjY0LTIuMzU0LTEuMDA4djIuNDcxYzAgMS45MzMgNC40NzggMy41IDEwIDMuNSA1LjUyMyAwIDEwLTEuNTY3IDEwLTMuNXYtMi40NzFjLS42MDIuMzY4LTEuMzY4LjcxMi0yLjM1NCAxLjAwOC0yLjA3LjYyMS00Ljc4Ni45NjMtNy42NDYuOTYzem0wLTZjLTIuODYgMC01LjU3NS0uMzQyLTcuNjQ2LS45NjMtLjk4Ni0uMjk2LTEuNzUyLS42NC0yLjM1NC0xLjAwOHYyLjk3MWMwIDEuNjU3IDQuNDc4IDMgMTAgMyA1LjUyMyAwIDEwLTEuMzQzIDEwLTN2LTIuOTcxYy0uNjAyLjM2OC0xLjM2OC43MTItMi4zNTQgMS4wMDgtMi4wNy42MjEtNC43ODYuOTYzLTcuNjQ2Ljk2M3ptMC02Yy0yLjg2IDAtNS41NzUtLjM0Mi03LjY0Ni0uOTYzLS45ODYtLjI5Ni0xLjc1Mi0uNjQtMi4zNTQtMS4wMDh2Mi45NzFjMCAxLjY1NyA0LjQ3OCAzIDEwIDMgNS41MjMgMCAxMC0xLjM0MyAxMC0zdi0yLjk3MWMtLjYwMi4zNjgtMS4zNjguNzEyLTIuMzU0IDEuMDA4LTIuMDcuNjIxLTQuNzg2Ljk2My03LjY0Ni45NjN6Ii8+PC9zdmc+Cg=="
+                        width="40" height="30" alt="DB">
+                    <h2> Open Brewery API</h2>
+
+                </a>
+            </div>
+        </nav>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
+
+<script src="script.js "></script>
+
+</html>
